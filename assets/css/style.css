@@ -300,6 +300,7 @@ section {
 .skills-info p {
     font-size: 1.4rem;
     font-weight: 600;
+    text-align: left;
     line-height: 1.7;
 }
 /* Projects */
@@ -416,6 +417,24 @@ section {
 }
 
 
+/* Thanks Page */
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.thanks h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.thanks .btn {
+    box-shadow: 0 0 10px var(--main-color);
+}
+
 /* Responsivness */
 @media(max-width: 800px) {
     #menu-icon {
@@ -469,7 +488,13 @@ section {
     .about img {
         width: 52vw;
     }
+    .skills-info p {
+        text-align: center;
+    }
     .contact form {
         flex-direction: column
+    }
+    .thanks h1 {
+        font-size: 2rem;
     }
 }
