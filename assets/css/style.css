@@ -483,6 +483,10 @@ textarea::placeholder {
         align-items: center;
         text-align: center;
     }
+    .home-content h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     .home-img img {
         width: 56vw;
     }
