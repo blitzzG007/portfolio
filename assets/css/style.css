@@ -13,7 +13,7 @@
     --bg-color: #080808;
     --secong-bg-color: #101010;
     --text-color: #ffffff;
-    --main-color: #ea580c;
+    --main-color: #c11616;
 }
 
 html {
@@ -41,8 +41,9 @@ body {
 }
 
 #menu-icon {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--main-color);
+    transform: translateX(30px);
     display: none;
 }
 .logo {
@@ -58,8 +59,8 @@ body {
 span {
     background: linear-gradient(
         270deg, 
-        #df8908 10%, 
-        #ff1d15 100%
+        #ef3c3c 10%,
+        #c11616 100%
     );
     background-clip: text;
     color: transparent;
@@ -85,8 +86,8 @@ span {
     border: none;
     background: linear-gradient(
         270deg, 
-        #df8908 10%, 
-        #ff1d15 100%
+        #ef3c3c 10%,
+        #af0c0c 100% 
     );
     color: var(--text-color);
     letter-spacing: 1px;
@@ -175,7 +176,7 @@ section {
     box-shadow: 0 0 15px var(--main-color);
     border-radius: 3rem;
     font-size: 1.8rem;
-    color: var(--secong-bg-color);
+    color: var(--text-color);
     border: 2px solid transparent;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -187,13 +188,13 @@ section {
 }
 .btn-group a:nth-of-type(2) {
     background: var(--secong-bg-color);
-    color: var(--main-color);
+    color: var(--text-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 10px transparent;
 }
 .btn-group a:nth-of-type(2):hover {
     background: var(--main-color);
-    color: var(--secong-bg-color);
+    color: var(--text-color);
     box-shadow: 0 0 20px var(--main-color);
 }
 
@@ -289,6 +290,9 @@ section {
     text-align: center;
     padding: 5rem;
 }
+.skills-info:hover {
+    color: var(--text-color);
+}
 .skills-info i {
     font-size: 5rem;
 }
@@ -352,6 +356,7 @@ section {
 }
 .project-card p {
     font-size: 1.3rem;
+    padding: 0 20px;
 }
 /* Contact */
 .contact {
@@ -380,6 +385,10 @@ section {
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
+}
+.contact input::placeholder, 
+textarea::placeholder {
+    color: var(--text-color);
 }
 .contact form .btn {
     margin-top: 20px;
