@@ -223,14 +223,16 @@ section {
 .about-content h2 {
     font-size: 7rem;
     text-align: left;
+    margin-top: 40px;
 }
-.about-content p {
+.about-content p, #more-about-me p {
     font-size: 1.8rem;
 }
 .about-content .btn {
     margin: 3rem 0;
 }
 
+/* Scroll bar */
 ::-webkit-scrollbar {
     width: 8px;
 }
